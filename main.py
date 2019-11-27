@@ -5,7 +5,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-abalone = pd.read_csv('Abalone.txt')
+abalone = pd.read_csv('Abalone.csv')
 data = np.array(abalone)
 print (pd.concat([abalone.describe()[1:4], abalone.describe()[7:8]]))
 plt.subplots(2, 2, figsize=(15, 8))
